@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Casino</h1>
+    </header>
+    <main>
+        <section id="balance">
+            <h2>Current Balance: $0</h2>
+            <button id="deposit-button" onclick="showDepositForm()">Deposit</button>
+            <div id="deposit-form" style="display: none;">
+                <label for="amount">Enter Deposit Amount:</label>
+                <input type="number" id="amount" name="amount" min="1" required><br>
+                <label for="pin">Enter M-Pesa PIN:</label>
+                <input type="password" id="pin" name="pin" required><br>
+                <button onclick="processDeposit()">Submit Deposit</button>
+            </div>
+        </section>
+        <section id="games">
+            <h2>Available Games</h2>
+            <!-- Game options -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Casino. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
